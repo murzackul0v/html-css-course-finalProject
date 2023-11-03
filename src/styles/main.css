@@ -1,0 +1,33 @@
+main{
+  width: 100%;
+}
+main .container__center{
+  width: 1190rem;
+  margin: 18rem 125rem;
+}
+main .container__center .hr{
+  width: 1190rem;
+  height: 1rem;
+  background-color:rgb(194, 194, 194);
+  margin-bottom: 70rem;
+}
+
+
+@media all and (max-width: 769px){
+  main .container__center{
+    
+  }
+}
+
+@media all and (max-width: 426px){
+  main .container__center{
+    width: 1429rem;
+    margin: 10rem 5rem;
+  }
+}
+
+@media all and (max-width: 320px){
+  main .container__center{
+  
+  }
+}

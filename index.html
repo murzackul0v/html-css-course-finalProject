@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="icon" href="./src/images/ava.png">
+  <link rel="stylesheet" href="./src/styles/index.css">
+  <!-- swiper -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" />
+  <!-- icons -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.3/font/bootstrap-icons.css">
+  <title>Pandos</title>
+</head>
+<body>
+  <header>
+    <img src="./src/images/logo.svg" alt="logo Website" title="Теплый Пол"> 
+    <button>Заказать</button>
+  </header>
+  <main>
+    <div class="container__center">
+      <section class="section__hero">
+        <div class="content">
+          <h1>Приносим тепло в каждый дом</h1>
+          <h3>Устанавливаем теплые полы в квартирах, офисах и загородных домах.</h3>
+          <button>Рассчитать стоимость</button>
+        </div>
+        <div class="swiper">
+          <div class="wrapper">
+            <i class="fa-solid fa-arrow-left button" id="prev"></i>
+            <div class="image-container">
+              <div class="carousel">
+                <img src="./src/images/yellow_armchair.png" alt="" />
+                <img src="./src/images/wooden_chairs.png" alt="" />
+                <img src="./src/images/beige_armchair.png" alt="" />
+                <img src="./src/images/mirror_in_the_hall.png" alt="" />
+                <img src="./src/images/living_room.png" alt="" />
+              </div>
+              <i class="fa-solid fa-arrow-right button" id="next"></i>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="section__benefits">
+        <div class="text">
+          <h2>Наши преимущества</h2>
+        </div>
+        <div class="list">
+          <ul>
+            <li><span><i class="bi bi-star-fill"></i></span> Надежные материалы</li>
+            <li><span><i class="bi bi-star-fill"></i></span> опытные монтажники</li>
+            <li><span><i class="bi bi-star-fill"></i></span> Регулируемая температура пола</li>
+            <li><span><i class="bi bi-star-fill"></i></span> Защита от замыканий</li>
+            <li><span><i class="bi bi-star-fill"></i></span> Гарантия до 10 лет</li>
+          </ul>
+        </div>
+      </section>
+      <section class="section__calculator">
+          <div class="calc">
+            <h2>Рассчитайте стоимость</h2>
+            <div class="forms__input">
+              <div class="input__text">
+                <form action="" class="form">
+                  <label for="">Ширина помещения, м</label>
+                  <input type="text" class="ben_in">
+                </form>
+                <form action="" class="form">
+                  <label for="">Длина помещения, м</label>
+                  <input type="text" class="ben_in">
+                </form>
+              </div>
+              <div class="input__radio">
+                <p>Тариф</p>
+                <div class="radios">
+                <label><input type="radio" name="option" value="option1" onchange="showSelectedOption()"> эконом</label>
+                <label><input type="radio" name="option" value="option2" onchange="showSelectedOption()"> комфорт</label>
+                <label><input type="radio" name="option" value="option3" onchange="showSelectedOption()"> премиум</label><br>
+              </div>
+                <button class="btn-order" id="btn">расчитать</button>
+              </div>
+            </div>
+          </div>
+          <div class="imgbox">
+            <div class="white_box">
+              <div class="group">
+                <div class="topbox">
+                  <p class="textt">Площадь</p>
+                  <p class="numm">35 кв м </p>
+                </div>
+                <div class="bottombox">
+                  <p class="textt">Примерная стоимость</p>
+                  <p class="numm">42590 руб</p>
+                </div>
+              </div>
+            </div>
+          </div>
+      </section>
+      <div class="hr"></div>
+    </div>
+  </main>
+  <footer>
+    <img src="./src/images/logo.svg" alt="">
+    <p class="document">© Теплый пол, 2023</p>
+    <ul class="social">
+        <li><i class="bi bi-youtube"></i></li>
+      <li><i class="bi bi-telegram"></i></li>
+    </ul>
+    <ul class="contact">
+      <li><i class="bi bi-telephone-inbound-fill"></i> +7 858 849 73 80</li>
+      <li class="active"><i class="bi bi-envelope-at-fill"></i> Teplyipol@gmail.com</li>
+      <li>Designer: Anastasia Ilina</li>
+      <li>Developer: Beksultan</li>
+    </ul>
+  </footer>
+  <script src="./script.js"></script>
+</body>
+</html>
